@@ -1,7 +1,7 @@
 import './App.css';
 import styled,  {ThemeProvider} from "styled-components";
 import { useState } from "react";
-import { darkTheme, lightTheme } from './utils/Themes.js'
+import { darkTheme } from './utils/Themes.js'
 import Navbar from "./components/Navbar";
 import Intro  from './components/IntroSection';
 import Skills from './components/Skills';

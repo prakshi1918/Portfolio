@@ -184,7 +184,7 @@ const Navbar = () => {
     return (<Nav>
         <NavContainer>
         <NavLogo to='/'>
-          <a href="" style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
+          <a href="#about" style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
             <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
           </a>
         </NavLogo>
