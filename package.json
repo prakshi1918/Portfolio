@@ -1,7 +1,7 @@
 {
   "name": "prakshi-jain-portfolio",
   "version": "0.1.0",
-  "homepage": "https://prakshi1918.github.io/Portfolio",
+  "homepage": "https://prakshi1918.github.io/scaling-octo-enigma",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
