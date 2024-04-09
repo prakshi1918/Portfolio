@@ -13,17 +13,6 @@ const Document = styled.img`
     }
 `
 
-const Description = styled.div`
-    width: 100%;
-    font-size: 15px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
-    margin-bottom: 10px;
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
-
 const Span = styled.span`
 overflow: hidden;
 display: -webkit-box;
@@ -71,16 +60,6 @@ const Top = styled.div`
     width: 100%;
     display: flex;
     gap: 12px
-`
-
-const Image = styled.img`
-    height: 50px;
-    background-color: #000;
-    border-radius: 10px;
-    margin-top: 4px;
-    @media only screen and (max-width: 768px){
-        height: 40px;
-    }
 `
 
 const Body = styled.div`
@@ -132,7 +111,6 @@ const EducationCard = ({ education }) => {
     return (
         <Card>
             <Top>
-                {/* <Image src={education.img} /> */}
                 <Body>
                     <Name>{education.school}</Name>
                     <Degree>{education.degree}</Degree>
@@ -140,9 +118,6 @@ const EducationCard = ({ education }) => {
                 </Body>
             </Top>
             <Grade><b>Grade: </b>{education.grade}</Grade>
-            {/* <Description>
-                <Span>{education.desc}</Span>
-            </Description> */}
         </Card>
     )
 }

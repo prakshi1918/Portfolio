@@ -2,9 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import emp from "../Images/emp.png";
 import password from "../Images/password.png";
-import todoList from "../Images/todoList.png";
-import { FaCommentsDollar } from 'react-icons/fa';
- 
+import todoList from "../Images/todoList.png"; 
 
 const Button = styled.button`
     display: none;
@@ -88,17 +86,6 @@ const Title = styled.div`
     text-overflow: ellipsis;
 `
 
-const Date = styled.div`
-    font-size: 12px;
-    margin-left: 2px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
-    @media only screen and (max-width: 768px){
-        font-size: 10px;
-    }
-`
-
-
 const Description = styled.div`
     font-weight: 400;
     color: ${({ theme }) => theme.text_secondary + 99};
@@ -138,29 +125,14 @@ const Buttona = styled.a`
     }
 `;
 
-const Members = styled.div`
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-`
-const Avatar = styled.img`
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    margin-left: -10px;
-    background-color: ${({ theme }) => theme.white};
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    border: 3px solid ${({ theme }) => theme.card};
-`
-
 const ProjectCards = ({project,setOpenModal}) => {
     return (
         <Card >
             {console.log(project.subTitle)}
-            { (project.subTitle == 'password') ?
+            { (project.subTitle === 'password') ?
                 <Image src={password}/>
                 :
-                ( (project.subTitle == 'emp') ?
+                ( (project.subTitle === 'emp') ?
                 <Image src={emp}/> :
                 <Image src={todoList}/>
             )

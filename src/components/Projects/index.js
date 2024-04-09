@@ -1,12 +1,13 @@
 import React from 'react'
-import { useState } from 'react'
-import { Container, Wrapper, Title, Desc, CardContainer, ToggleButtonGroup, ToggleButton, Divider } from './ProjectsStyle'
+// import { useState } from 'react'
+import { Container, Wrapper, Title, CardContainer } from './ProjectsStyle'
 import ProjectCard from '../Cards/Projectcards'
 import { projects } from '../../data/constants'
 
 
 const Projects = ({openModal,setOpenModal}) => {
-  const [toggle, setToggle] = useState('all');
+  // const [toggle, setToggle] = useState('all');
+  const toggle = 'all';
   return (
     <Container id="projects">
       <Wrapper>
@@ -17,7 +18,7 @@ const Projects = ({openModal,setOpenModal}) => {
               <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
             ))}
           {projects
-            .filter((item) => item.category == toggle)
+            .filter((item) => item.category === toggle)
             .map((project) => (
               <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
             ))}

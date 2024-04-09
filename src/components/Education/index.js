@@ -50,17 +50,6 @@ margin-top: 20px;
   }
 `;
 
-const Desc = styled.div`
-    font-size: 18px;
-    text-align: center;
-    max-width: 600px;
-    color: ${({ theme }) => theme.text_secondary};
-    @media (max-width: 768px) {
-        margin-top: 12px;
-        font-size: 16px;
-    }
-`;
-
 const TimelineSection = styled.div`
     width: 100%;
     max-width: 1000px;
@@ -82,9 +71,6 @@ const index = () => {
         <Container id="education">
             <Wrapper>
                 <Title>Education</Title>
-                {/* <Desc>
-                    My education has been a journey of self-discovery and growth. My educational details are as follows.
-                </Desc> */}
                 <TimelineSection>
                     <Timeline>
                         {education.map((education,index) => (
