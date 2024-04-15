@@ -6,9 +6,9 @@ export const Bio = {
       "Backend Developer",
       "Programmer",
     ],
-    description:
-   
-      "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning and expertise in Spring Boot, ReactJS, Javascript, Java, SQL. Taking ownership of business problems and dedicated to delivering high-quality, user-centric solutions. Dedicated to delivering high-quality results.",
+    description:      
+      "I am diligent towards my role and enthusiastic about considering challenges, with a passion for learning and proficiency in Javascript, ReactJS, Java, Spring Boot, and SQL. Taking accountability for solutions to business problems and demonstrating a dedication to deliver superior, user-focused solutions devoted to delivering high-quality results.",
+      // "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning and expertise in Spring Boot, ReactJS, Javascript, Java, SQL. Taking ownership of business problems and dedicated to delivering high-quality, user-centric solutions. Dedicated to delivering high-quality results.",
     github: "https://github.com/prakshi1918",
     resume:
       "https://drive.google.com/file/d/1ImVNZeBwgHLCa2Oe8FatQV9rkJPVV5_4/view?usp=sharing",
